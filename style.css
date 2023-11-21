@@ -5,6 +5,26 @@
     margin: 0;
 }
 
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+
+h2 {
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+p {
+    color: #646464;
+    font-size: 18px;
+    align-self: flex-start;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -21,8 +41,26 @@ header {
     align-items: center;
 }
 
+.header__p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 .logo {
 
+}
+
+.button__first {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #37806B;
+    text-transform: uppercase;
+    border-radius: 20px 0 20px 0;
+    padding: 7px 20px;
+    margin-top: 4rem;
 }
 
 nav {
@@ -48,24 +86,46 @@ nav {
 }
 
 .project {
+    margin-top: 10vh;
     display: inline-flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 73%;
-    height: 68vh;
-
 }
 
 .project__left {
     width: 43%;
-    height: 38vh;
+    height: auto;
 }
 
 .project__right {
-    width: 54%;
+    width: 51%;
     height: 60vh;
     top: 0;
 }
+
+.image__wrapper {
+    width: 95%;
+    height: 95%;
+    border-radius: 100px 0 100px 0;
+    background-image: url(./media/Project.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.image__wrapper::before {
+    content: "";
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 0 100px 0;
+    border: 2px solid #B0855B;
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+
 
 
 .service {
@@ -76,10 +136,3 @@ nav {
     height: 50vh;
 }
 
-.service__p{
-    align-self: flex-start;
-}
-
-.service__h2{
-    align-self: flex-start;
-}
