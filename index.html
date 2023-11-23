@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="logo" src="./media/Logo.jpg" alt="Logo">
-        <nav>
-            <a class="menu__item">HOME</a>
-            <a class="menu__item">PROJECT</a>
-            <a class="menu__item">SERVICES</a>
-            <a class="menu__item">ABOUT</a>
-            <a class="menu__item">BLOG</a>
-            <a class="menu__item">SHOP</a>
-            <a class="menu__item">CONTACT</a>
-            <button class="sign__up" href="">Sign Up</button>
-        </nav>
+        <div class="header__container">
+            <img class="logo" src="./media/Logo.png" alt="Logo">
+            <nav>
+                <a class="menu__item">HOME</a>
+                <a class="menu__item" href="#project">PROJECT</a>
+                <a class="menu__item">SERVICES</a>
+                <a class="menu__item">ABOUT</a>
+                <a class="menu__item">BLOG</a>
+                <a class="menu__item">SHOP</a>
+                <a class="menu__item">CONTACT</a>
+                <button class="sign__up" href="">Sign Up</button>
+            </nav>
+        </div>
     </header>
 
 
 
-    <div class="project">
+    <div class="project" id="project">
         <div class="project__left">
             <p class="theme__p">Modern interior</p>
             <h1>Create Your<br>Interior Design.</h1>
@@ -91,7 +93,7 @@
 
 
     <div class="about">
-        <div class="theme__image__right">
+        <div class="theme__image__left">
             <div class="theme__image__left__wrapper">
                 <img class="theme__image" src="./media/About.jpg" alt="">
             </div>
@@ -112,11 +114,40 @@
     </div>
 
     <div class="about2">
-
+            <div class="project__left">
+                <p class="twenty">20</p>
+                <h2 class="h2__about2">Years Of Successful Working The Market</h2>
+                <button class="button__first">read more</button>
+            </div>
+            <div class="theme__image__right">
+                <div class="theme__image__right__wrapper">
+                    <img class="theme__image" src="./media/About2.jpg" alt="">
+                </div>
+            </div>
     </div>
 
     <div class="about3">
-
+        <div class="about3__container">
+            <h2 class="about3__h2">3000+ Completed Work <br> Which WE have Successfully Done</h2>
+            <div class="achievements">
+                <div class="achievement__wrapper">
+                    <p class="achievement__number">980</p>
+                    <p class="achievement__title">Project</p>
+                </div>
+                <div class="achievement__wrapper">
+                    <p class="achievement__number">520</p>
+                    <p class="achievement__title">Happy Client</p>
+                </div>
+                <div class="achievement__wrapper">
+                    <p class="achievement__number">330</p>
+                    <p class="achievement__title">Winners</p>
+                </div>
+                <div class="achievement__wrapper">
+                    <p class="achievement__number">120</p>
+                    <p class="achievement__title">Recoment</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="reviews">
