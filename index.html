@@ -9,18 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="home">
     <header>
         <div class="header__container">
             <img class="logo" src="./media/Logo.png" alt="Logo">
             <nav>
-                <a class="menu__item">HOME</a>
-                <a class="menu__item" href="#project">PROJECT</a>
-                <a class="menu__item">SERVICES</a>
-                <a class="menu__item">ABOUT</a>
-                <a class="menu__item">BLOG</a>
-                <a class="menu__item">SHOP</a>
-                <a class="menu__item">CONTACT</a>
+                <a class="menu__item" href="#home">HOME</a>
+                <a class="menu__item" href="#services">SERVICES</a>
+                <a class="menu__item" href="#about">ABOUT</a>
+                <a class="menu__item" href="#blog">BLOG</a>
+                <a class="menu__item" href="#shop">SHOP</a>
+                <a class="menu__item" href="#contact">CONTACT</a>
                 <button class="sign__up" href="">Sign Up</button>
             </nav>
         </div>
@@ -28,7 +27,7 @@
 
 
 
-    <div class="project" id="project">
+    <div class="project">
         <div class="project__left">
             <p class="theme__p">Modern interior</p>
             <h1>Create Your<br>Interior Design.</h1>
@@ -44,26 +43,20 @@
 
 
 
-    <div class="service">
+    <div class="service" id="services">
         <p class="theme__p">What we do</p>
-        <h2 class="service__h2">Our Service</h2>
+        <h2 >Our Service</h2>
         <div class="service__arrows">
-            <!-- <button class="arrow__img"> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646464" class="caret" viewBox="0 0 16 16">
                 <path d="M 10 12.796 z m -0.659 0.753 l -5.48 -4.796 a 1 1 0 0 1 0 -1.506 l 5.48 -4.796 A 1 1 0 0 1 11 3.204 v 9.592 a 1 1 0 0 1 -1.659 0.753 z"/>
                 </svg>
-            <!-- </button> -->
-            <!-- <button class="arrow__img"> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646464" class="caret" viewBox="0 0 16 16">
                 <path d="M 6 12.796 z m 0.659 0.753 l 5.48 -4.796 a 1 1 0 0 0 0 -1.506 L 6.66 2.451 C 6.011 1.885 5 2.345 5 3.204 v 9.592 a 1 1 0 0 0 1.659 0.753 z"/>
                 </svg>
-            <!-- </button> -->
         </div>
         <div class="service__container">
             <div class="sevice__poster">
-
                 <img class="service__img" src="./media/1st.png" alt="">
-
                 <div class="service__info">
                     <p class="p__service">Interior Design</p>
                     <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
@@ -79,7 +72,6 @@
             </div>
             
             <div class="sevice__poster">
-
             <img class="service__img" src="./media/3rd.png" alt="">
             
                 <div class="service__info">
@@ -92,7 +84,7 @@
 
 
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="theme__image__left">
             <div class="theme__image__left__wrapper">
                 <img class="theme__image" src="./media/About.jpg" alt="">
@@ -134,13 +126,28 @@
                     <p class="achievement__number">980</p>
                     <p class="achievement__title">Project</p>
                 </div>
+                <div class="achievement__connect">
+                    <svg class="achievement__connect__svg" xmlns="http://www.w3.org/2000/svg" viewBox="-0.2 -0.2 6.4 2.4">
+                        <path d="M -0.25 0 L 3 0 L 3 2 L 6.25 2" stroke="#E0E0E0" stroke-width="0.05" fill="none"/>
+                    </svg>
+                </div>
                 <div class="achievement__wrapper">
                     <p class="achievement__number">520</p>
                     <p class="achievement__title">Happy Client</p>
                 </div>
+                <div class="achievement__connect">
+                    <svg class="achievement__connect__svg" xmlns="http://www.w3.org/2000/svg" viewBox="-0.2 -0.2 6.4 2.4">
+                        <path d="M -0.25 2 L 3 2 L 3 0 L 6.25 0" stroke="#E0E0E0" stroke-width="0.05" fill="none"/>
+                    </svg>
+                </div>
                 <div class="achievement__wrapper">
                     <p class="achievement__number">330</p>
                     <p class="achievement__title">Winners</p>
+                </div>
+                <div class="achievement__connect">
+                    <svg class="achievement__connect__svg" xmlns="http://www.w3.org/2000/svg" viewBox="-0.2 -0.2 6.4 2.4">
+                        <path d="M -0.25 0 L 3 0 L 3 2 L 6.25 2" stroke="#E0E0E0" stroke-width="0.05" fill="none"/>
+                    </svg>
                 </div>
                 <div class="achievement__wrapper">
                     <p class="achievement__number">120</p>
@@ -151,7 +158,16 @@
     </div>
 
     <div class="reviews">
-
+        <p class="theme__p">TESTIMONIALS</p>
+        <h2 >Client says about us</h2>
+        <div class="service__arrows">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646464" class="caret" viewBox="0 0 16 16">
+            <path d="M 10 12.796 z m -0.659 0.753 l -5.48 -4.796 a 1 1 0 0 1 0 -1.506 l 5.48 -4.796 A 1 1 0 0 1 11 3.204 v 9.592 a 1 1 0 0 1 -1.659 0.753 z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646464" class="caret" viewBox="0 0 16 16">
+            <path d="M 6 12.796 z m 0.659 0.753 l 5.48 -4.796 a 1 1 0 0 0 0 -1.506 L 6.66 2.451 C 6.011 1.885 5 2.345 5 3.204 v 9.592 a 1 1 0 0 0 1.659 0.753 z"/>
+            </svg>
+        </div>
     </div>
 
     <div class="news">

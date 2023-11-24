@@ -1,6 +1,7 @@
 * {
     /* border: 1px solid black; */
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 h1,h2,h3 {
@@ -105,7 +106,15 @@ nav {
 }
 
 .menu__item {
+    text-decoration: none;
+    color: #111111;
+    transition: .25s;
+}
 
+.menu__item:hover {
+    scale: 1.05;
+    color: #646464;
+    transition: .25s;
 }
 
 .sign__up {
@@ -166,12 +175,12 @@ nav {
 
 
 .service {
+    padding-top: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 73%;
-    height: 50vh;
-    margin-top: 10vh;
+    /* height: 50vh; */
 }
 
 .service__arrows {
@@ -257,8 +266,9 @@ nav {
 }
 
 
+
 .about {
-    margin-top: 10vh;
+    padding-top: 20vh;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -340,23 +350,56 @@ nav {
     width: 100%;
     height: 270px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 8vh;
 }
 
 .achievement__wrapper {
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem 0;
     padding: 40px;
     box-shadow: 0 13px 16px #00000010;
     background-color: #fff;
+    min-width: 120px;
 }
 
-.achievement__wrapper:nth-child(even) {
+.achievement__wrapper:nth-child(4n+1) {
+    align-self: flex-start;
+}
+
+.achievement__wrapper:nth-child(4n+3) {
     align-self: flex-end;
 }
 
 .achievement__number {
+    align-self: center;
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
 }
+
+.achievement__title {
+    align-self: center;
+}
+
+.achievement__connect__svg {
+    position: relative;
+    width: auto;
+    width: 100%;
+}
+
+.achievement__connect__svg {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 0;
+    animation: dash 1s linear;
+  }
+  
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 10;
+      }
+    100% {
+        stroke-dashoffset: 0;
+    }
+  }
