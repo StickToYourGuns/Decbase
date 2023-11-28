@@ -22,7 +22,6 @@ h2 {
 p {
     color: #646464;
     font-size: 18px;
-    align-self: flex-start;
     font-weight: 400;
     margin: .5rem 0;
     line-height: 1.5rem;
@@ -78,10 +77,11 @@ header {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
+    align-self: flex-start;
 }
 
 .logo {
-
+    
 }
 
 .button__first {
@@ -175,7 +175,8 @@ nav {
 
 
 .service {
-    padding-top: 20vh;
+    margin-top: 5vh;
+    padding-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,7 +184,7 @@ nav {
     /* height: 50vh; */
 }
 
-.service__arrows {
+.arrows {
     display: inline-flex;
     align-self: flex-end;
     gap: 20px;
@@ -268,7 +269,8 @@ nav {
 
 
 .about {
-    padding-top: 20vh;
+    margin-top: 5vh;
+    padding-top: 15vh;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -341,7 +343,7 @@ nav {
     width: 73%;
 }
 
-.about3__h2 {
+.h2__center {
     text-align: center;
 }
 
@@ -403,3 +405,64 @@ nav {
         stroke-dashoffset: 0;
     }
   }
+
+.reviews {
+    margin-top: 5vh;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 73%;
+}
+
+.theme__p__center {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.h2_center {
+    align-self: center;
+}
+
+.reviews__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.reviews__poster {
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 10px 20px lightgrey;
+    padding: 30px 20px;
+    border-radius: 3em 0;
+    position: relative;
+}
+
+.reviews__img {
+    left: -10%;
+    margin-right: 10px;
+    border-radius: 40px 0;
+    position: absolute;
+}
+
+.reviews__info {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.p__reviews {
+    font-weight: 700;
+    font-size: 24px;
+    color: #212121;
+    margin: 0;
+}
+
+/* .p__service.active {
+    color: #fff;
+} */
