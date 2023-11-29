@@ -5,6 +5,7 @@
 }
 
 h1,h2,h3 {
+    color: #212121;
     font-family: 'Poppins', sans-serif;
     font-size: 72px;
     font-weight: 600;
@@ -18,6 +19,12 @@ h2 {
     font-size: 48px;
     line-height: 4rem;
 }
+
+h3 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 28px;
+    letter-spacing: 8%}
 
 p {
     color: #646464;
@@ -91,7 +98,7 @@ header {
     background-color: #37806B;
     text-transform: uppercase;
     border: 0px;
-    border-radius: 1rem 0 1rem 0;
+    border-radius: 25px 0 25px 0;
     padding: 7px 20px;
     margin-top: 3rem;
 }
@@ -408,7 +415,7 @@ nav {
 
 .reviews {
     margin-top: 5vh;
-    padding-top: 15vh;
+    padding: 10vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,27 +449,98 @@ nav {
     position: relative;
 }
 
+.quotes {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-weight: 500;
+    font-size: 100px;
+    color: #B0855B;
+    line-height: 130px;
+}
+
 .reviews__img {
-    left: -10%;
+    left: -65px;
     margin-right: 10px;
     border-radius: 40px 0;
     position: absolute;
 }
 
 .reviews__info {
-    margin-left: 10%;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 .p__reviews {
     font-weight: 700;
     font-size: 24px;
     color: #212121;
-    margin: 0;
+    margin: 0 50px 0 0 ;
 }
 
-/* .p__service.active {
-    color: #fff;
-} */
+.p__reviews>span {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+.news {
+    width: 100%;
+    display: flex;
+    margin-top: 10vh;
+    background-color: #F8F8F8;
+    flex-direction: column;
+    align-items: center;
+    padding: 8vh 0;
+}
+
+.news__container {
+    margin-top: 8vh;
+    display: inline-flex;
+    width: 73%;
+    gap: 5vw;
+}
+
+.news__wrapper {
+    max-width: auto;
+}
+
+.news__img {
+    width: 80%;
+    border-radius: 100px 0;
+    box-shadow: #f8f8f8 15px 15px 0px -2px, #B0855B 15px 15px;
+    margin-bottom: 50px;
+}
+
+.p__news {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+
+
+.newletter {
+    margin-top: 5vh;
+    padding: 10vh 0;
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    margin: 40px 0;
+    color: #C4C4C4;
+    width: 30%;
+}
+
+.newletter > p {
+    width: 50%;
+    text-align: center;
+}
