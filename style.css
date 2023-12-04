@@ -9,15 +9,16 @@ h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 72px;
     font-weight: 600;
-    line-height: 4rem;
+    line-height: 78px;
     margin-top: 0;
+    margin-bottom: 30px;
 }
 
 h2 {
     align-self: flex-start;
     font-weight: 500;
     font-size: 48px;
-    line-height: 4rem;
+    line-height: 20px;
 }
 
 h3 {
@@ -31,7 +32,7 @@ p {
     font-size: 18px;
     font-weight: 400;
     margin: .5rem 0;
-    line-height: 1.5rem;
+    line-height: 30px;
     font-family: 'Open Sans', sans-serif;
     color: #646464;
 }
@@ -62,7 +63,7 @@ body {
 header {
     z-index: 1;
     width: 100%;
-    height: 10vh;
+    height: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,19 +73,11 @@ header {
 }
 
 .header__container {
-    width: 70%;
+    width: 1355px;
     display: inline-flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.theme__p {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-    align-self: flex-start;
 }
 
 .logo {
@@ -98,13 +91,13 @@ header {
     background-color: #37806B;
     text-transform: uppercase;
     border: 0px;
-    border-radius: 25px 0 25px 0;
-    padding: 7px 20px;
-    margin-top: 3rem;
+    border-radius: 20px 0 20px 0;
+    padding: 10px 25px;
+    margin-top: 40px;
 }
 
 nav {
-    width: 60%;
+    width: 820px;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -128,66 +121,67 @@ nav {
     background-color: #CAA892;
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
     padding: 7px 20px;
-    margin-left: 8%;
+    margin-left: 10px;
     border: 0px;
     border-radius: 1rem 0 16px 0;
 }
 
+
+
+
+
 .project {
-    margin-top: 15vh;
+    margin-top: 175px;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
+    width: 1360px;
+    position: relative;
+    background-image: url(./media/Dots.svg);
+    background-size: 100px;
+    background-position: left bottom;
 }
 
 .project__left {
-    width: 40%;
+    width: 45%;
     height: auto;
 }
 
-.theme__image__right {
-    width: 54%;
+.theme__p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+    align-self: flex-start;
 }
 
-.theme__image__right__wrapper {
-    width: 95%;
-    height: 95%;
-    border-radius: 100px 0;
-    /* background-image: url(./media/Project.jpg); */
-    /* background-size: cover; */
-    position: relative;
+.theme__img__right {
+    border-radius: 140px 0;
+    box-shadow: #f8f8f8 15px 15px 0px -2px, #B0855B 15px 15px;
 }
 
-.theme__image__right__wrapper::before {
-    content: "";
-    z-index: -10;
-    width: 100%;
-    height: 100%;
-    border-radius: 100px 0;
-    border: 2px solid #B0855B;
-    position: absolute;
-    margin-top: 4%;
-    margin-left: 4%;
-}
-
-.theme__image {
-    width: 100%;
+.theme__img__left {
+    /* width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 100px 0; */
+    width: 100%;
     border-radius: 100px 0;
+    box-shadow: #f8f8f8 15px 15px 0px -2px, #B0855B 15px 15px;
 }
+
+
 
 
 
 .service {
-    margin-top: 5vh;
-    padding-top: 15vh;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1300px;
+    width: 1360px;
     /* height: 50vh; */
 }
 
@@ -545,6 +539,40 @@ hr {
     text-align: center;
 }
 
+.form__newsletter {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.form__input {
+    background-color: #EEEEEE;
+    border: 0;
+    border-radius: 20px 0 0 0;
+    margin: 0;
+    padding: 15px;
+    height: 40px;
+    width: 90%;
+    font-size: 18px;
+}
+
+.form__button {
+    background-color: #37806B;
+    border: 0;
+    border-radius: 0 0 20px 0;
+    margin: 0;
+    padding: 0 10px;
+    color: #fff;
+    height: 70px;
+    min-width: 180px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
 
 
 footer {
@@ -615,6 +643,11 @@ footer {
     align-self: center;
     width: 99.9%;
     border: 1px solid #C4C4C4;
+    margin: 0;
+}
+
+footer > p {
+    margin: 25px;
 }
 
 footer > p > span {
