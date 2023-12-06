@@ -84,7 +84,7 @@ header {
     width: 150px;
 }
 
-.button__first {
+.button__green {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -93,7 +93,6 @@ header {
     border: 0px;
     border-radius: 20px 0 20px 0;
     padding: 10px 25px;
-    margin-top: 35px;
 }
 
 nav {
@@ -144,7 +143,10 @@ nav {
 .project__left {
     margin-top: 125px;
     width: 45%;
-    height: auto;
+}
+
+.project__left > .button__green {
+    margin-top: 40px;
 }
 
 .theme__p {
@@ -152,7 +154,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     margin: 0px 0;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 
 .theme__img__right {
@@ -182,12 +184,20 @@ nav {
     position: relative;
 }
 
+.service > .theme__p {
+    align-self: flex-start;
+}
+
+.service > h2 {
+    align-self: flex-start;
+}
+
 .arrows {
     display: inline-flex;
     align-self: flex-end;
     gap: 25px;
     position: absolute;
-    top: 75px;
+    top: 70px;
 }
 
 .caret {
@@ -209,7 +219,7 @@ nav {
 
 
 .service__container {
-    margin-top: 35px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,7 +269,7 @@ nav {
 
 .about {
     padding-top: 150px;
-    margin-top: 90px;
+    margin-top: 80px;
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -278,16 +288,30 @@ nav {
     height: auto;
 }
 
+.about__right > h2 {
+    line-height: 57px;
+}
+
+.about__right > .button__green {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
 
 
 
 
 .about2 {
-    margin-top: 15vh;
+    margin-top: 225px;
     display: inline-flex;
     justify-content: space-between;
-    align-items: center;
-    width: 1300px;
+    align-items: flex-start;
+    width: 1360px;
+}
+
+.about2__left {
+    margin-top: 110px;
+    width: 45%;
 }
 
 .twenty {
@@ -297,32 +321,41 @@ nav {
     background-size: contain;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* padding: 90px 0 110px 0; */
     line-height: 230px;
 }
 
-.h2__about2 {
-    margin: 0;
+.about2__left > h2 {
+    margin-top: 30px;
+    font-size: 50px;
+    line-height: 65px;
 }
+
+.about2__left > .button__green {
+    margin-top: 15px;
+}
+
+
 
 
 
 .about3 {
     width: 100%;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 205px;
     background-color: #F8F8F8;
     flex-direction: column;
     align-items: center;
-    padding: 8vh 0;
+    padding-top: 80px;
+    padding-bottom: 110px;
 }
 
 .about3__container {
-    width: 1300px;
+    width: 1360px;
 }
 
-.h2__center {
+.about3__container > h2 {
     text-align: center;
+    line-height: 60px;
 }
 
 .achievements {
@@ -331,14 +364,14 @@ nav {
     height: 270px;
     justify-content: space-between;
     align-items: center;
-    padding-top: 8vh;
+    margin-top: 60px;
 }
 
 .achievement__wrapper {
     display: flex;
     flex-direction: column;
-    border-radius: 1rem 0;
-    padding: 40px;
+    border-radius: 40px 0;
+    padding: 50px 30px;
     box-shadow: 0 13px 16px #00000010;
     background-color: #fff;
     min-width: 120px;
@@ -357,10 +390,15 @@ nav {
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
+    margin: 0;
 }
 
 .achievement__title {
     align-self: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .achievement__connect__svg {
@@ -384,49 +422,61 @@ nav {
     }
   }
 
+
+
+
+
 .reviews {
-    margin-top: 5vh;
-    padding: 10vh 0;
+    margin-top: 170px;
+    margin-bottom: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1300px;
+    width: 1360px;
+    position: relative;
 }
 
-.theme__p__center {
+.reviews > .theme__p {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
     margin: 0;
+    text-align: center;
 }
 
-.h2_center {
+.reviews > h2 {
     align-self: center;
 }
 
+.reviews > .arrows {
+    top: 90px;
+}
+
 .reviews__container {
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10%;
+    padding-left: 80px;
 }
 
 .reviews__poster {
     display: inline-flex;
     align-items: center;
     box-shadow: 0 10px 20px lightgrey;
-    padding: 30px 20px;
-    border-radius: 3em 0;
+    padding: 40px 30px;
+    border-radius: 70px 0;
     position: relative;
 }
 
 .quotes {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 20px;
+    right: 40px;
     font-weight: 500;
-    font-size: 100px;
+    font-size: 120px;
     color: #B0855B;
     line-height: 130px;
 }
@@ -460,25 +510,26 @@ nav {
 
 
 
+
+
 .news {
     width: 100%;
     display: flex;
-    margin-top: 10vh;
     background-color: #F8F8F8;
     flex-direction: column;
     align-items: center;
-    padding: 8vh 0;
+    padding-top: 95px;
+}
+
+.news > h2 {
+    align-self: center;
 }
 
 .news__container {
-    margin-top: 8vh;
+    margin-top: 50px;
     display: inline-flex;
-    width: 1300px;
-    gap: 5vw;
-}
-
-.news__wrapper {
-    max-width: auto;
+    width: 1360px;
+    
 }
 
 .news__img {
