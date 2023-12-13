@@ -4,6 +4,14 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-snap-type: y proximity;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
 h1,h2,h3 {
     color: #212121;
     font-family: 'Poppins', sans-serif;
@@ -59,7 +67,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-snap-type: y mandatory;
 }
 
 .header {
@@ -164,7 +171,8 @@ nav {
 
 
 .project {
-    margin-top: 175px;
+    /* margin-top: px; */
+    padding-top: 175px;
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -205,8 +213,8 @@ nav {
 
 
 .service {
-    margin-top: 45px;
-    padding-top: 110px;
+    margin-top: 40px;
+    padding-top: 115px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -332,7 +340,8 @@ nav {
 
 
 .about2 {
-    margin-top: 225px;
+    margin-top: 110px;
+    padding-top: 115px;
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -369,13 +378,13 @@ nav {
 
 
 .about3 {
+    margin-top: 165px;
+    padding-top: 115px;
     width: 100%;
     display: flex;
-    margin-top: 205px;
     background-color: #F8F8F8;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
     padding-bottom: 110px;
 }
 
@@ -457,7 +466,8 @@ nav {
 
 
 .reviews {
-    margin-top: 170px;
+    margin-top: 55px;
+    padding-top: 115px;
     margin-bottom: 190px;
     display: flex;
     flex-direction: column;
@@ -479,7 +489,7 @@ nav {
 }
 
 .reviews > .arrows {
-    top: 90px;
+    top: 205px;
 }
 
 .reviews__container {
@@ -543,12 +553,12 @@ nav {
 
 
 .news {
+    padding-top: 115px;
     width: 100%;
     display: flex;
     background-color: #F8F8F8;
     flex-direction: column;
     align-items: center;
-    padding-top: 95px;
     position: relative;
 }
 
@@ -577,6 +587,7 @@ nav {
 }
 
 .p__news {
+    color: #212121;
     font-weight: 600;
     font-size: 30px;
     line-height: 28px;
@@ -662,6 +673,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: end;
 }
 
 .footer__wrapper {
