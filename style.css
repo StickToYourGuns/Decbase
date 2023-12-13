@@ -205,7 +205,43 @@ nav {
 .project__dots {
     position: absolute;
     left: 0;
-    top: 78vh;
+    top: 750px;
+}
+
+.project__dots2 {
+    position: absolute;
+    right: 0;
+    top: 1350px;
+}
+
+.project__dots3 {
+    position: absolute;
+    left: 0;
+    top: 2335px;
+}
+
+.project__dots4 {
+    position: absolute;
+    right: 0;
+    top: 3300px;
+}
+
+.project__dots5 {
+    position: absolute;
+    left: 0;
+    top: 4005px;
+}
+
+.project__dots6 {
+    position: absolute;
+    right: 0;
+    top: 5825px;
+}
+
+.project__dots7 {
+    position: absolute;
+    left: 0;
+    top: 6465px;
 }
 
 
