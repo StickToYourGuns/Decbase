@@ -142,6 +142,10 @@ nav {
     transition: .25s;
 }
 
+.menu__item.active {
+    color: #646464;
+}
+
 .menu__item:hover {
     scale: 1.05;
     color: #646464;
