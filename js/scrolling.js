@@ -1,11 +1,11 @@
+let headerTrigger = document.querySelector(".header__trigger");
 let header = document.querySelector(".header");
 let scrollBefore = 0;
-let scrollPos;
-let menu = Array.from(document.querySelectorAll(".menu__item"));
-let sections = Array.from(document.querySelectorAll(".menu__a"));
+let mouseY = 0;
+let scrollPosition;
+let menuArray = Array.from(document.querySelectorAll(".menu__item"));
+let sectionsArray = Array.from(document.querySelectorAll(".menu__a"));
 let sectionPositions = [];
-
-
 
 
 function getCoords(array) {
@@ -15,27 +15,48 @@ function getCoords(array) {
     return(sectionPositions);
 }
 
-getCoords(sections);
+function comparingCoords(scrollPosition) {
+    let activeSection = -1;
 
-function comparingCoords(scrollPos) {
-    // если положение скролла больше элемента массива sectionPositions, добавить ему класс active и убрать у остальных
-    for (let i=1; )
+    for (let i = 0; i < sectionPositions.length; i++) {
+        if (scrollPosition >= sectionPositions[i]) {
+            activeSection = i;
+        } else {
+            break;
+        }
+    }
+
+    if (activeSection !== -1) {
+        menuArray.forEach(function(e) {
+            e.classList.remove("active");
+        })
+        menuArray[activeSection].classList.add("active")
+    }
 }
 
-
 function hidingHeader() {
-    scrollPos = window.scrollY;
-    if(scrollBefore > scrollPos) {
+    if(scrollBefore > scrollPosition) {
         header.classList.remove("hidden");
-        scrollBefore = scrollPos;
+        scrollBefore = scrollPosition;
+    } else if ((scrollBefore < scrollPosition) && (mouseY<115)) {
+        header.classList.remove("hidden");
+        scrollBefore = scrollPosition;
     } else {
         header.classList.add("hidden");
-        scrollBefore = scrollPos;
+        scrollBefore = scrollPosition;
     }
 }
 
 window.addEventListener("scroll", function() {
+    scrollPosition = window.scrollY;
     hidingHeader();
-    comparingCoords();
-    // console.log(scrollPos)
+    getCoords(sectionsArray);
+    comparingCoords(scrollPosition);
 })
+
+window.addEventListener('mousemove', (event) => {
+    mouseY = event.clientY;
+    if (mouseY<115) {
+        header.classList.remove("hidden");
+    }
+});
