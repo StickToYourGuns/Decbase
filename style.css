@@ -44,10 +44,6 @@ p {
     color: #646464;
 }
 
-p.active {
-    color: #fff;
-}
-
 a {
     font-family: 'Open Sans', sans-serif;
 }
@@ -303,6 +299,12 @@ nav {
     transition: .5s;
 }
 
+.caret:active {
+    fill: black;
+    background-color: white;
+    transform: scale(1.1);
+}
+
 
 .service__container {
     margin-top: 40px;
@@ -312,7 +314,7 @@ nav {
     gap: 2%;
 }
 
-.sevice__poster {
+.service__poster {
     display: inline-flex;
     align-items: flex-start;
     box-shadow: 0 10px 20px lightgrey;
@@ -320,9 +322,19 @@ nav {
     border-radius: 60px 0;
 }
 
-.sevice__poster.active {
+.service__poster.active {
     background-color: #CAA892;
+    animation: smth .25s linear;
 }
+
+@keyframes smth {
+    0% {
+        background-color: black;
+      }
+    100% {
+        background-color: #CAA892;
+    }
+  }
 
 .service__img {
     margin: 0 10px;
@@ -338,14 +350,18 @@ nav {
     align-items: flex-start;
 }
 
-.p__service {
+.p__service1 {
     font-weight: 700;
     font-size: 24px;
     color: #212121;
     margin: 0;
 }
 
-.p__service.active {
+.p__service1.active {
+    color: #fff;
+}
+
+.p__service2.active {
     color: #fff;
 }
 

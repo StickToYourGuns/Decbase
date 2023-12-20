@@ -47,7 +47,7 @@ function hidingHeader() {
     }
 }
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", () => {
     scrollPosition = window.scrollY;
     hidingHeader();
     getCoords(sectionsArray);
