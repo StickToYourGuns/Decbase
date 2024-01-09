@@ -41,3 +41,27 @@ let sliderHelper = (direction) => {
 arrows[0].addEventListener("click", () => sliderHelper("left"));
 
 arrows[1].addEventListener("click", () => sliderHelper("right"));
+
+// let sliderClicker = (array, event) => {
+//     array.forEach(function (item) {
+//         item.classList.remove("active")
+//     })
+//     // array[event.currentTarget.dataset.number].classList.add("active");
+//     // console.log(array[event.currentTarget.dataset.number])
+// }
+
+let sliderHelperClicker = (event) => {
+    console.log(event.currentTarget.dataset.number)
+    // sliderClicker(posterArray, event);
+    // sliderClicker(imgArray, event);
+    // sliderClicker(p1Array, event);
+    // sliderClicker(p2Array, event);
+}
+
+// posterArray.forEach(function (block) {
+//     block.addEventListener("click", (event) => sliderHelperClicker(event))
+// })
+
+posterArray.forEach(function (block) {
+    block.addEventListener("click", (block) => console.log(block))
+})

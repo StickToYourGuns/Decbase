@@ -320,6 +320,13 @@ nav {
     box-shadow: 0 10px 20px lightgrey;
     padding: 40px 0 20px 45px;
     border-radius: 60px 0;
+    transition: .5s;
+}
+
+.service__poster:hover {
+    /* background-color: #e4e4e4; */
+    border-radius: 60px 60px;
+    transition: .5s;
 }
 
 .service__poster.active {
