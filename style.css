@@ -327,11 +327,13 @@ nav {
     /* background-color: #e4e4e4; */
     border-radius: 60px 60px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .service__poster.active {
     background-color: #CAA892;
     animation: smth .25s linear;
+    cursor: auto;
 }
 
 @keyframes smth {
@@ -515,11 +517,13 @@ nav {
     position: relative;
     width: auto;
     width: 100%;
+    opacity: 0;
 }
 
-.achievement__connect__svg {
+.achievement__connect__svg.active {
     stroke-dasharray: 10;
     stroke-dashoffset: 0;
+    opacity: 1;
     animation: dash 1s linear;
   }
   

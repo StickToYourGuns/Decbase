@@ -7,6 +7,17 @@ let menuArray = Array.from(document.querySelectorAll(".menu__item"));
 let sectionsArray = Array.from(document.querySelectorAll(".menu__a"));
 let sectionPositions = [];
 
+let connecting = Array.from(document.querySelectorAll(".achievement__connect__svg"))
+let achievements = (document.querySelector(".about3").getBoundingClientRect().top + window.pageYOffset)-300;
+
+let all = Array.from(document.querySelectorAll("section"));
+
+let hideAll = () => all.forEach(function (section) {
+    section.style.opacity=0;
+})
+
+hideAll();
+
 
 function getCoords(array) {
     sectionPositions = array.map(function (elem) {
@@ -52,6 +63,11 @@ window.addEventListener("scroll", () => {
     hidingHeader();
     getCoords(sectionsArray);
     comparingCoords(scrollPosition);
+    if (scrollPosition >= achievements) {
+        connecting.forEach(function(item) {
+            item.classList.add("active");
+        })
+    }
 })
 
 window.addEventListener('mousemove', (event) => {

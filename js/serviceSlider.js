@@ -31,6 +31,14 @@ let slider = (array, direction) => {
     }
 }
 
+let dataNumbers = () => {
+    for (let i = 0; i < posterArray.length; i++) {
+        posterArray[i].setAttribute("data-number", (i));
+    }
+}
+
+dataNumbers();
+
 let sliderHelper = (direction) => {
     slider(posterArray, direction);
     slider(imgArray, direction);
@@ -42,26 +50,21 @@ arrows[0].addEventListener("click", () => sliderHelper("left"));
 
 arrows[1].addEventListener("click", () => sliderHelper("right"));
 
-// let sliderClicker = (array, event) => {
-//     array.forEach(function (item) {
-//         item.classList.remove("active")
-//     })
-//     // array[event.currentTarget.dataset.number].classList.add("active");
-//     // console.log(array[event.currentTarget.dataset.number])
-// }
-
-let sliderHelperClicker = (event) => {
-    console.log(event.currentTarget.dataset.number)
-    // sliderClicker(posterArray, event);
-    // sliderClicker(imgArray, event);
-    // sliderClicker(p1Array, event);
-    // sliderClicker(p2Array, event);
+let sliderClicker = (array, event) => {
+    array.forEach(function (item) {
+        item.classList.remove("active")
+    })
+    array[event.currentTarget.dataset.number].classList.add("active");
 }
 
-// posterArray.forEach(function (block) {
-//     block.addEventListener("click", (event) => sliderHelperClicker(event))
-// })
+let sliderHelperClicker = (event) => {
+    console.log(event.currentTarget)
+    sliderClicker(posterArray, event);
+    sliderClicker(imgArray, event);
+    sliderClicker(p1Array, event);
+    sliderClicker(p2Array, event);
+}
 
 posterArray.forEach(function (block) {
-    block.addEventListener("click", (block) => console.log(block))
+    block.addEventListener("click", (event) => sliderHelperClicker(event))
 })
