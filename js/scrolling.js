@@ -12,13 +12,6 @@ let achievements = (document.querySelector(".about3").getBoundingClientRect().to
 
 let all = Array.from(document.querySelectorAll("section"));
 
-let hideAll = () => all.forEach(function (section) {
-    section.style.opacity=0;
-})
-
-hideAll();
-
-
 function getCoords(array) {
     sectionPositions = array.map(function (elem) {
         return (elem.getBoundingClientRect().top + window.pageYOffset);
@@ -38,8 +31,8 @@ function comparingCoords(scrollPosition) {
     }
 
     if (activeSection !== -1) {
-        menuArray.forEach(function(e) {
-            e.classList.remove("active");
+        menuArray.forEach(function(element) {
+            element.classList.remove("active");
         })
         menuArray[activeSection].classList.add("active")
     }
