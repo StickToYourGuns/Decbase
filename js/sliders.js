@@ -1,15 +1,24 @@
 let posterArray = Array.from(document.querySelectorAll(".service__poster"));
+let reviewsArray = Array.from(document.querySelectorAll(".reviews__container"));
 let imgArray = Array.from(document.querySelectorAll(".service__img"));
 let p1Array = Array.from(document.querySelectorAll(".p__service1"));
 let p2Array = Array.from(document.querySelectorAll(".p__service2"));
-let arrows = Array.from(document.querySelectorAll(".caret"));
+let posterArrows = Array.from(document.querySelectorAll(".caret"));
+let reviewsArrows = Array.from(document.querySelectorAll(".caret2"));
 
 
-let slider = (array, direction) => {
+let sliders = (array, direction) => {
     let activeElement;
     let prevElement;
     let nextElement;
     
+    console.log("here")
+
+    array.forEach (function (value, index) {
+        console.log(value, index)
+    });
+
+
     array.forEach (function (value, index) {
         if (value.classList.contains("active")) {
             activeElement = index;
@@ -25,7 +34,7 @@ let slider = (array, direction) => {
     } else {
         prevElement = activeElement-1;
         if (prevElement < 0) {
-            prevElement = 2;
+            prevElement = (array.length-1);
         }
         array[prevElement].classList.add("active")
     }
@@ -40,15 +49,12 @@ let dataNumbers = () => {
 dataNumbers();
 
 let sliderHelper = (direction) => {
-    slider(posterArray, direction);
-    slider(imgArray, direction);
-    slider(p1Array, direction);
-    slider(p2Array, direction);
+    sliders(posterArray, direction);
+    sliders(imgArray, direction);
+    sliders(p1Array, direction);
+    sliders(p2Array, direction);
 }
 
-arrows[0].addEventListener("click", () => sliderHelper("left"));
-
-arrows[1].addEventListener("click", () => sliderHelper("right"));
 
 let sliderClicker = (array, event) => {
     array.forEach(function (item) {
@@ -68,3 +74,11 @@ let sliderHelperClicker = (event) => {
 posterArray.forEach(function (block) {
     block.addEventListener("click", (event) => sliderHelperClicker(event))
 })
+
+posterArrows[0].addEventListener("click", () => sliderHelper("left"));
+
+posterArrows[1].addEventListener("click", () => sliderHelper("right"));
+
+reviewsArrows[0].addEventListener("click", () => sliders(reviewsArray, "left"));
+
+reviewsArrows[1].addEventListener("click", () => sliders(reviewsArray, "right"));

@@ -38,7 +38,7 @@
             <p class="theme__p">Modern interior</p>
             <h1>Create Your<br>Interior Design.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <button onclick="location.href='./404.html'" class="button__green">contact</button>
+            <button class="button__green popup">contact</button>
         </div>
         <img class="theme__img__right" src="./media/Project.jpg" alt="">
     </section>
@@ -100,7 +100,7 @@
                 All the Lorem Ipsum generators on the Internettend to repeat
                 predefined chunks as necessary,making this the first true
                 generator on the Internet.</p>
-            <button onclick="location.href='./404.html'" class="button__green">learn more</button>
+            <button class="button__green popup">learn more</button>
         </div>
     </section>
     <img class="project__dots3" src="./media/Dots.svg" alt="">
@@ -111,7 +111,7 @@
             <div class="about2__left">
                 <p class="twenty">20</p>
                 <h2 class="h2">Years Of Successful Working <br>The Market</h2>
-                <button onclick="location.href='./404.html'" class="button__green">read more</button>
+                <button class="button__green popup">read more</button>
             </div>
             <div class="theme__image__right">
                 <img class="theme__img__right" src="./media/About2.jpg" alt="">
@@ -340,8 +340,54 @@
         <hr class="footer__hr">
         <p>Copyright @ 2020 <span>Brandoxide</span>.all right reserved.</p>
     </footer>
+
+
+    <div class="pop__container">
+        <div class="pop__container__content">
+            <div class="pop__container__content__left">
+                <img class="pop__image" src="./media/News_1.jpg" alt="">
+            </div>
+            <div class="pop__container__content__right">
+
+                <svg class="pop__close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="close">
+                        <path fill="#ffffff30" id="x" d="M18.717 6.697l-1.414-1.414-5.303 5.303-5.303-5.303-1.414 1.414 5.303 5.303-5.303 5.303 1.414 1.414 5.303-5.303 5.303 5.303 1.414-1.414-5.303-5.303z"></path>
+                    </g>
+                </svg>
+
+                <form class="form">
+                    <p class="form__p">Leave your phone number<br> we'll call you back soon </p>
+                    <div class="form__container">
+                        <div class="input__part__form">
+                            <span class="input__fill__form">Name</span>
+                            <input class="input__data__form" type="text" name="name" placeholder="What is your name?" required="">
+                        </div>
+                        <div class="input__part__form">
+                            <span class="input__fill__form">Phone</span>
+                            <input class="input__data__form" type="phone" name="phone" placeholder="Your phone number:" minlength="12" maxlength="12" required="">
+                            <span class="form__error">Это поле должно содержать номер телефона в формате +71234567890</span>
+                        </div>
+                        <div class="input__part__form">
+                            <span class="input__fill__form">Message (optional)</span>
+                            <input class="input__data__form" type="text" name="message" placeholder="Describe your questions:">
+                        </div>
+                        <label class="form__agree">I agree to the processing of personal data
+                            <input type="checkbox" checked="checked">
+                            <span class="checkboxX"></span>
+                        </label>
+                    </div>
+                    <div class="form__bottom__container">
+                        <button type="submit" class="button__green">REQUEST A CALL</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
     <script src="./js/scrolling.js"></script>
-    <script src="./js/serviceSlider.js"></script>
-    <script src="./js/reviewsSlider.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/pops.js"></script>
 </body>
 </html>
